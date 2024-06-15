@@ -12,7 +12,7 @@ body{
     margin-top: 0;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 4% 2% 6% repeat(4, auto);
+    grid-template-rows: 4% 2% 6.5% repeat(4, auto);
 }
 body > div{
     display: grid;
@@ -82,7 +82,7 @@ body > div{
 /* Experience styles */
 #experience{
     grid-template-rows: auto 1fr 1fr;
-    margin-bottom: 2%;
+    margin: 1% 0;
     height: 98%;
 }
 #experience > h3{
