@@ -1,0 +1,1 @@
+In this task I have created a html, css project to generate a resume that can be printed into a pdf sheet. made this to learn more css, and styling practices, as well as to replace my current microsoft word resume.

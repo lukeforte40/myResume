@@ -1,0 +1,157 @@
+/* Default styles */
+*{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 2.5%;
+    width: 95%;
+    height: 95%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4% 2% 6% repeat(4, auto);
+}
+body > div{
+    display: grid;
+}
+/* Name styles */
+#name{
+    grid-template-columns: 2fr 0.75fr 0.75fr 2fr;
+}
+#name > h1{
+    text-align: center;
+}
+#name > h1:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/* Contact info styles */
+#info > p{
+    text-align: center;
+}
+#info > p > a{
+    color: blue;
+}
+/* Soft skills styles */
+#softSkills{
+    grid-template-rows: 12.5% 87.5%;
+}
+#softSkills > h3{
+    border-bottom: 1px solid black;
+    height: 98.5%;
+    padding-bottom: 1.5%;
+}
+#softSkills > ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2%;
+}
+#softSkills > ul > li{
+    margin: 2%;
+    width: 96%;
+}
+/* Skills styles */
+#skills{
+    grid-template-columns: repeat(3, 1fr);
+}
+#skills > div{
+    width: 95%;
+    margin: 0 2.5%;
+    display: grid;
+    grid-template-rows: 12.5% 87.5%;
+}
+#skills > div > h3{
+    border-bottom: 1px solid black;
+    height: 99%;
+    padding-bottom: 1%;
+}
+#skills > div > ul{
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    margin-top: 3%;
+}
+#skills > div > ul > li{
+    margin: 0 2%;
+    width: 96%;
+}
+/* Experience styles */
+#experience{
+    grid-template-rows: auto 1fr 1fr;
+    margin-bottom: 2%;
+    height: 98%;
+}
+#experience > h3{
+    border-bottom: 1px solid black;
+}
+#experience > div{
+    padding-top: 1%;
+    height: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 10% 10% 70%;
+}
+#experience > div > h4:nth-child(1){
+    text-decoration: underline;
+}
+#experience > div > h4:nth-child(2){
+    text-align: right;
+}
+#experience > div > h5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#experience > div > ul{
+    list-style: none;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#experience > div > ul > li{
+    margin: 0.5%;
+}
+/* Projects styles */
+#projects{
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2%;
+    height: 98%;
+}
+#projects > h3{
+    border-bottom: 1px solid black;
+    grid-column: 1 / 3;
+}
+#projects > div{
+    padding-top: 1%;
+    height: 99%;
+    display: grid;
+}
+#projects > div > ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    list-style-position: inside;
+}
+#projects > div > p{
+    margin: 0 2%;
+    width: 96%;
+}
+/* Education styles */
+#education{
+    grid-template-columns: 1fr 1fr;
+}
+#education > h3{
+    border-bottom: 1px solid black;
+    grid-column: 1 / 3;
+}
+#education > h4:nth-child(3){
+    text-align: right;
+}
+#education > p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
